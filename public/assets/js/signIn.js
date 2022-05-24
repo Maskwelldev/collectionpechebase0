@@ -1,1 +1,4 @@
-// wannaClose.addEventListener('click', history.go(-1));
+wannaClose.addEventListener('click', function () {
+    window.history.back();
+});   
+
