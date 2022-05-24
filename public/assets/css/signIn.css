@@ -48,7 +48,9 @@ header {
 }
 
 #logo {
-    filter: invert(1);
+    width: 80px;
+    height: 80px;
+    /* filter: invert(1); */
 }
 
 h1 {
