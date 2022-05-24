@@ -1,0 +1,280 @@
+/* reset CSS */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #fcfcfc;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+#mainContainer {
+    position: relative;
+    height: 100vh;
+}
+
+.mainContainer {
+    overflow: hidden;
+}
+
+/* background main page */
+#mobileBackground {
+    height: 90%vh;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+/* navbar */
+header {
+    height: 10%;
+    box-shadow: 2px 0px 10px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #ffffff;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}
+
+#menuList, #menuCollection{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+li {
+    list-style: none;
+    font-size: 1rem;
+    padding: 10px;
+
+}
+
+li:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.menulist {
+    padding: 10px;
+    background-color: #031828;
+    /* z-index: 50; */
+}
+
+.menuList {
+    position: absolute;
+    left: 100%;
+    height: 100vh;
+    width: 100%;
+    background-color: #031828;
+    display: none;
+}
+
+.menuCollection {
+    position: absolute;
+    left: 100%;
+    height: 100vh;
+    width: 100%;
+    background-color: #031828;
+    display: none;
+    z-index: 2;
+}
+
+#searchContainer {
+    position: relative; 
+}
+
+#searchIcon {
+    position: absolute;
+    padding-top: 2px;
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+#iconsContainer {
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#userConnect {
+    width: 24px;
+    height: 24px;
+}
+
+.userConnect {
+    width: 24px;
+    height: 24px;
+}
+
+#menuFill {
+    width: 30px;
+    height: 30px;
+}
+
+.menuTransitionLeft {
+    position: absolute;
+    left: 100%;
+    height: 100vh;
+    width: 100%;
+    background-color: #031828;
+    display: block;
+    animation-name: slideLeft;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    color: white;    
+    z-index: 1;
+}
+
+.menuTransitionRight {
+    position: absolute;
+    left: 100%;
+    height: 100vh;
+    width: 100%;
+    background-color: #031828;
+    display: block;
+    animation-name: slideRight;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    color: white;    
+    z-index: 1;
+}
+
+.closeButton {
+    filter: invert(1);
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+}
+
+.elementsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #031828;
+}
+
+.backButton {
+    filter: invert(1);
+    height: 24px;
+    width: 24px;
+    margin-top: -2px;
+    padding-left: 8px;
+    /* visibility: hidden; */
+
+}
+
+#hiddenBackButton {
+    visibility: hidden;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+#searchbar {
+    color: white;
+    background-color: #031828;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    height: 30px;
+}
+
+/* corps de la page */
+
+#sectionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+section {
+    padding: 10px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 30px   ;
+}
+
+.imgArticleContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgArticle {
+    width: 100%;
+
+}
+
+#h2MainPage {
+    padding: 10px;
+}
+
+/* article and decoration */
+
+#article {
+    position: relative;
+}
+
+#article::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #242424;
+    width: 80%;
+    margin-left: 15px;
+    top: 130%;
+    right: 10%;
+}
+
+
+/* keyframes animations */
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
