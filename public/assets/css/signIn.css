@@ -237,6 +237,7 @@ li:hover {
 #bigLogo {
     width: 70%;
     align-self: center;
+    filter: invert(15%) sepia(33%) saturate(6206%) hue-rotate(191deg) brightness(92%) contrast(101%);   
 }
 
 form {
