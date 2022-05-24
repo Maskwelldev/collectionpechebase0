@@ -223,14 +223,16 @@ li:hover {
 } */
 
 #signInContainer {
+    display: flex;
+    /* justify-content: center; */
+    gap: 65px;
     width: 60%;
-    position: relative;
+    margin-top: -60px;
 }
 
 #bigLogo {
-    position: absolute;
-    top: 200px;
-    left: 80px;
+    width: 70%;
+    align-self: center;
 }
 
 form {
