@@ -1,3 +1,4 @@
+/* reset CSS */
 * {
     padding: 0px;
     margin: 0px;
@@ -9,13 +10,6 @@ body {
     height: 100vh;
 }
 
-#mobileBackground {
-    height: 90%vh;
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-}
-
 #mainContainer {
     position: relative;
     height: 100vh;
@@ -25,6 +19,15 @@ body {
     overflow: hidden;
 }
 
+/* background main page */
+#mobileBackground {
+    height: 90%vh;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+/* navbar */
 header {
     height: 10%;
     box-shadow: 2px 0px 10px black;
@@ -197,8 +200,16 @@ li:hover {
 
 /* corps de la page */
 
+#sectionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
 section {
     padding: 10px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -216,6 +227,27 @@ section {
 .imgArticle {
     width: 100%;
 
+}
+
+#h2MainPage {
+    padding: 10px;
+}
+
+/* article and decoration */
+
+#article {
+    position: relative;
+}
+
+#article::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #242424;
+    width: 80%;
+    margin-left: 15px;
+    top: 130%;
+    right: 10%;
 }
 
 
