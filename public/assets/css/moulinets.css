@@ -12,23 +12,20 @@ body {
 
 a {
     text-decoration: none;
+    list-style: none;
+    color: white;
 }
 
 #mainContainer {
     position: relative;
     height: 100vh;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
 }
 
 .mainContainer {
     overflow: hidden;
-}
-
-/* background main page */
-#mobileBackground {
-    height: 90%vh;
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
 }
 
 /* navbar */
@@ -63,7 +60,9 @@ h3 {
 li {
     list-style: none;
     font-size: 1rem;
-    padding: 10px;
+    color: #002362;
+    text-decoration: underline;
+    /* padding: 10px; */
 
 }
 
@@ -277,4 +276,27 @@ section {
     to {
         transform: translateX(0%);
     }
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+.moulinetsContainer {
+    width: 90%;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px
+}
+
+#reelsImg {
+    width: 80%;
+}
+
+h2 {
+    font-size: 2rem;
 }

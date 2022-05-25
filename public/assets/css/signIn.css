@@ -48,7 +48,7 @@ h1 {
 }
 
 #bigLogo {
-    width: 70%;
+    width: 60%;
     align-self: center;
     filter: invert(15%) sepia(33%) saturate(6206%) hue-rotate(191deg) brightness(92%) contrast(101%);   
 }
@@ -89,14 +89,14 @@ form {
 }
 
 .miniText {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     align-self: flex-end;
     margin-top: -18px;
 }
 
 .miniText2 {
     margin-top: -18px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     align-self: flex-start;
 }
 
