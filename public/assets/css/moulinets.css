@@ -328,8 +328,12 @@ section {
     gap: 36px
 }
 
-#reelsImg {
+#reelsImgTop {
     width: 100%;
+}
+
+#reelsImg {
+    width: 85%;
 }
 
 h2 {
