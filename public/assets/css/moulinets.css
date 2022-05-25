@@ -12,7 +12,6 @@ body {
 
 a {
     text-decoration: none;
-    list-style: none;
     color: white;
 }
 
@@ -57,18 +56,24 @@ h3 {
     font-size: 24px;
 }
 
-li {
+.sectionList {
     list-style: none;
     font-size: 1rem;
     color: #002362;
     text-decoration: underline;
-    /* padding: 10px; */
+    padding: 10px;
 
 }
 
-li:hover {
-    background-color: rgb(255, 255, 255);
-    color: black;
+li {
+    list-style: none;
+    font-size: 1rem;
+}
+
+.liMenu {
+    list-style: none;
+    font-size: 1rem;
+    padding: 12px;
 }
 
 .menulist {
