@@ -20,19 +20,18 @@
                 <img src="public/assets/img/logoCollection.svg" id="bigLogo" alt="logoCollectionPeche">
                 <div class="formSignInContainer">
                     <form id="form" action="verification.php" method="POST">
-                        <h3 id="titleForm">Connectez-vous :</h3>
-                        <input class="input" type="email" placeholder="Email" name="username" required>
-                        <input class="input" type="text" placeholder="Mot de passe" name="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
-                        <a class="miniText" href="">Mot de passe oublié</a>
-                        <button class="input" type="submit" id='submitButton'>Connexion</button>
-                        <p class="miniText2">Pas encore de compte ? <a class="miniText" href="signUp.html">Inscrivez-vous</a></p>
+                        <h3 id="titleForm">Contactez-nous :</h3>
+                        <input class="input" type="email" placeholder="Entrez votre e-mail" name="username" required pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+                        <input class="input passwordMacth" type="text" placeholder="Objet du message" name="password1" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+                        <textarea id="messageZone" placeholder="Votre message ..." name="messageZone"></textarea>
+                        <button class="input" type="submit" id='submitButton'>Envoyer</button>
                     </form>
                 </div>
             </section>
         </div>
     </div>
 
-    <script type="text/javascript" src="public/assets/js/signIn.js"></script>
+    <script type="text/javascript" src="public/assets/js/contact.js"></script>
 </body>
 
 </html>
