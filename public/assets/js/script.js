@@ -1,7 +1,7 @@
 //viewport fixing
-window.addEventListener('resize',function(){
-    viewportHeight.style.height = window.innerHeight + 'px';
-    });
+// window.addEventListener('resize',function(){
+//     viewportHeight.style.height = window.innerHeight + 'px';
+//     });
 
 // display menu
 menuFill.addEventListener('click', displayMenu);
