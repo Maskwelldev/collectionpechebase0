@@ -21,10 +21,10 @@
                 <div class="formSignInContainer">
                     <form id="form" action="verification.php" method="POST">
                         <h1 id="titleForm">Connectez-vous :</h1>
-                        <input class="input" type="text" placeholder="Email" name="username" required>
-                        <input class="input" type="text" placeholder="Mot de passe" name="password" required>
+                        <input class="input" type="mail" placeholder="Email" name="username" required pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+                        <input class="input" type="text" placeholder="Mot de passe" name="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
                         <a class="miniText" href="">Mot de passe oublié</a>
-                        <input class="input" type="submit" id='submitButton' value='Connexion'>
+                        <button class="input" type="submit" id='submitButton'>Connexion</button>
                         <p class="miniText2">Pas encore de compte ? <a class="miniText" href="">Inscrivez-vous</a></p>
                     </form>
                 </div>
