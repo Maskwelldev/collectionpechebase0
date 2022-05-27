@@ -23,7 +23,8 @@ body {
 #mobileBackground {
     background-image: url("../img/test1.jpeg");
     height: 90vh;
-    background-size: cover;
+    background-size: 100%;
+    background-position: 0 0;
     /* width: 100%; */
     background-repeat: no-repeat;
 }
