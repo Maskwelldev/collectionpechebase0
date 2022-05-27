@@ -64,6 +64,10 @@ header {
     padding: 2px;
 
 }
+.sectionList:hover {
+    font-weight: bold;
+
+}
 
 .lastSectionList {
     padding-bottom: 40px;

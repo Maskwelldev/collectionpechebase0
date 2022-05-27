@@ -30,6 +30,7 @@ body {
 /* navbar */
 header {
     height: 10%;
+    min-height: 80px;
     box-shadow: 2px 0px 10px black;
     display: flex;
     justify-content: space-between;
