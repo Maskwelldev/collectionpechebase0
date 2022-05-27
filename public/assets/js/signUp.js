@@ -1,5 +1,5 @@
 wannaClose.addEventListener('click', function () {
-    window.history.back();
+    window.history.go(-2);
 });
 
 
