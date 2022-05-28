@@ -60,7 +60,7 @@ header {
 .sectionList {
     list-style: none;
     color: #002362;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     padding: 2px;
 
 }
